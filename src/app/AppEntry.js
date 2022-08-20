@@ -10,7 +10,7 @@ function LoggedInRoutes() {
     <Routes>
       <Route path="/" element={<Dashboard />} />
     </Routes>
-  ) 
+  );
 }
 
 function NotLoggedInRoutes() {
@@ -20,18 +20,14 @@ function NotLoggedInRoutes() {
       <Route path="contact" element={<Contact />} />
       <Route path="contact" element={<About />} />
     </Routes>
-  )
+  );
 }
 
 export default function AppEntry() {
-  const [isUserLoggedIn, updateLoggedInStatus] = useState(false);
+  const [isUserLoggedIn, updateLoggedInStatus] = useState(true);
   return (
     <div className="App">
-      {
-        isUserLoggedIn ? 
-          <LoggedInRoutes/> :
-            <NotLoggedInRoutes/>
-      }
+      {isUserLoggedIn ? <LoggedInRoutes /> : <NotLoggedInRoutes />}
     </div>
   );
 }

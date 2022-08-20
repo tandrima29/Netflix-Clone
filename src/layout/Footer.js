@@ -1,7 +1,4 @@
+import "./styles.css";
 export default function Footer() {
-    return (
-        <div>
-            I am footer
-        </div>
-    )
+  return <footer>I am footer</footer>;
 }
