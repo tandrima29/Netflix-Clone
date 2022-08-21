@@ -1,16 +1,16 @@
 /* header style */
 /* footer style */
-.footerbackdesign {
+.footer-backdesign {
   background-color: #141414;
   color: #808080;
 }
 .cursor {
   cursor: pointer;
 }
-.footerbackpadding {
+.footer-backpadding {
   padding: 25px;
 }
-.copyright {
+.copy-right {
   padding-bottom: 25px;
   padding-left: 9.5%;
 }

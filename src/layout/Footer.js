@@ -3,7 +3,7 @@ import "./styles.css";
 export default function Footer() {
   return (
     <footer>
-      <section class="footerbackdesign footerbackpadding">
+      <div class="footer-backdesign footer-backpadding">
         <div class="container text-center text-md-start mt-5">
           {/* <!-- Grid row  */}
           <div class="row mt-3">
@@ -11,13 +11,13 @@ export default function Footer() {
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               {/* Content --> */}
               <p>
-                <span class="clickable cursor">Audio Description</span>
+                <span class="cursor">Audio Description</span>
               </p>
               <p>
-                <span class="clickable cursor">Investor Relations</span>
+                <span class=" cursor">Investor Relations</span>
               </p>
               <p>
-                <span class="clickable cursor">Legal Notices</span>
+                <span class=" cursor">Legal Notices</span>
               </p>
             </div>
             {/* Grid column --> */}
@@ -29,16 +29,16 @@ export default function Footer() {
               <p>
                 <span
                   class="
-                clickable cursor"
+                cursor"
                 >
                   Help Centre
                 </span>
               </p>
               <p>
-                <span class="clickable cursor">Jobs</span>
+                <span class="cursor">Jobs</span>
               </p>
               <p>
-                <span class="clickable cursor">Cookie Preferences</span>
+                <span class=" cursor">Cookie Preferences</span>
               </p>
             </div>
             {/* Grid column --> */}
@@ -48,13 +48,13 @@ export default function Footer() {
               {/* Links --> */}
 
               <p>
-                <span class="clickable cursor">Gift Cards</span>
+                <span class="cursor">Gift Cards</span>
               </p>
               <p>
-                <span class="clickable cursor">Terms of Use</span>
+                <span class="cursor">Terms of Use</span>
               </p>
               <p>
-                <span class="clickable cursor">Corporate Information</span>
+                <span class=" cursor">Corporate Information</span>
               </p>
             </div>
             {/* Grid column --> */}
@@ -64,24 +64,24 @@ export default function Footer() {
               {/* Links --> */}
 
               <p>
-                <span class="clickable cursor">Media Centre</span>
+                <span class=" cursor">Media Centre</span>
               </p>
               <p>
-                <span class="clickable cursor">Privacy</span>
+                <span class=" cursor">Privacy</span>
               </p>
               <p>
-                <span class="clickable cursor">Contact Us</span>
+                <span class="cursor">Contact Us</span>
               </p>
             </div>
             {/* Grid column --> */}
           </div>
           {/* Grid row --> */}
         </div>
-      </section>
+      </div>
       {/* Section: Links  --> */}
 
       {/* Copyright --> */}
-      <div class="footerbackdesign copyright">© 1997-2022 Netflix, Inc.</div>
+      <div class="footer-backdesign copy-right">© 1997-2022 Netflix, Inc.</div>
       {/* {/* Copyright  */}
     </footer>
   );
