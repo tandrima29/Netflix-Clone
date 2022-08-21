@@ -1,2 +1,16 @@
 /* header style */
 /* footer style */
+.footerbackdesign {
+  background-color: #141414;
+  color: #808080;
+}
+.cursor {
+  cursor: pointer;
+}
+.footerbackpadding {
+  padding: 25px;
+}
+.copyright {
+  padding-bottom: 25px;
+  padding-left: 9.5%;
+}
