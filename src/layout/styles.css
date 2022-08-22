@@ -1,1 +1,16 @@
 /* header style */
+/* footer style */
+
+.cursor {
+  cursor: pointer;
+}
+
+footer {
+  color: grey;
+  background-color: #141414;
+}
+.footer-icon {
+  color: white;
+  margin-right: 15px;
+  cursor: pointer;
+}
