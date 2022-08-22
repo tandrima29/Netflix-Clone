@@ -3,7 +3,7 @@ import "./styles.css";
 export default function Footer() {
   return (
     <footer>
-      <div class="footer-backdesign footer-backpadding">
+      <div class="text-secondary bg-dark footer-backpadding">
         <div class="container text-center text-md-start mt-5">
           {/* <!-- Grid row  */}
           <div class="row mt-3">
@@ -81,7 +81,9 @@ export default function Footer() {
       {/* Section: Links  --> */}
 
       {/* Copyright --> */}
-      <div class="footer-backdesign copy-right">© 1997-2022 Netflix, Inc.</div>
+      <div class="text-secondary bg-dark copy-right">
+        © 1997-2022 Netflix, Inc.
+      </div>
       {/* {/* Copyright  */}
     </footer>
   );
