@@ -4,10 +4,13 @@
 .cursor {
   cursor: pointer;
 }
-.footer-backpadding {
-  padding: 25px;
+
+footer {
+  color: grey;
+  background-color: #141414;
 }
-.copy-right {
-  padding-bottom: 25px;
-  padding-left: 9.5%;
+.footer-icon {
+  color: white;
+  margin-right: 15px;
+  cursor: pointer;
 }
