@@ -6,7 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="p-5">
+    <footer className="p-5 mt-5">
       <div className="container">
         <div className="row mt-3">
           <div className="col-12">
