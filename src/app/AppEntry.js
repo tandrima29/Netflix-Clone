@@ -4,6 +4,7 @@ import Contact from "../containers/contact/Contact";
 import Dashboard from "../containers/dashboard/Dashboard";
 import LoginSignup from "../containers/login-signup/LoginSignup";
 import About from "../containers/about/About";
+import "./global.css";
 
 function LoggedInRoutes() {
   return (
@@ -26,7 +27,7 @@ function NotLoggedInRoutes() {
 export default function AppEntry() {
   const [isUserLoggedIn, updateLoggedInStatus] = useState(true);
   return (
-    <div className="App">
+    <div className="app">
       {isUserLoggedIn ? <LoggedInRoutes /> : <NotLoggedInRoutes />}
     </div>
   );

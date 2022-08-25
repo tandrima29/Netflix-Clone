@@ -1,4 +1,5 @@
-import { RecentWatch } from "./rercent";
+import { RecentWatch } from "./Rercent";
+import "./styles.css";
 
 export default function Home() {
   return (

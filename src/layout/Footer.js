@@ -71,7 +71,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="row mt-3">
-          <div classNameName="col-12">© 1997-2022 Netflix, Inc.</div>
+          <div className="col-12">© 1997-2022 Netflix, Inc.</div>
         </div>
       </div>
     </footer>

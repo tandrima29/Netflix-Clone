@@ -1,0 +1,7 @@
+.movie-card{
+    transition: .2s;
+  }
+.movie-card:hover{
+    transform: scale(1.3);
+    z-index: 999;
+}

@@ -4,6 +4,7 @@ import "./moviecard.css";
 export default function MovieCard(props) {
   return (
     <div
+      className="movie-card"
       style={{
         minHeight: 180,
         backgroundImage: `url(${props.bgImg})`,
