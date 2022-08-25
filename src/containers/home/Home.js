@@ -1,7 +1,9 @@
+import { RecentWatch } from "./rercent";
+
 export default function Home() {
-    return (
-        <div>
-            I am home
-        </div>
-    )
+  return (
+    <div>
+      <RecentWatch />
+    </div>
+  );
 }
