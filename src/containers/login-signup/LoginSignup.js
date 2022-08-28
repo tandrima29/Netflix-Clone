@@ -3,10 +3,5 @@ import Header from "../../layout/Header";
 import Hero from "../../components/hero-section/hero";
 
 export default function LoginSignup() {
-  return (
-    <div>
-      <Header />
-      <Hero />
-    </div>
-  );
+  return <div></div>;
 }

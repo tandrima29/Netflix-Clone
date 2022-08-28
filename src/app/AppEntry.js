@@ -25,7 +25,7 @@ function NotLoggedInRoutes() {
 }
 
 export default function AppEntry() {
-  const [isUserLoggedIn, updateLoggedInStatus] = useState(true);
+  const [isUserLoggedIn, updateLoggedInStatus] = useState(false);
   return (
     <div className="app">
       {isUserLoggedIn ? <LoggedInRoutes /> : <NotLoggedInRoutes />}
