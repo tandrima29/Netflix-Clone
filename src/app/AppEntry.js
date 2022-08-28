@@ -4,13 +4,14 @@ import Contact from "../containers/contact/Contact";
 import Dashboard from "../containers/dashboard/Dashboard";
 import LoginSignup from "../containers/login-signup/LoginSignup";
 import About from "../containers/about/About";
+import "./global.css";
 
 function LoggedInRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Dashboard />} />
     </Routes>
-  ) 
+  );
 }
 
 function NotLoggedInRoutes() {
@@ -20,18 +21,14 @@ function NotLoggedInRoutes() {
       <Route path="contact" element={<Contact />} />
       <Route path="contact" element={<About />} />
     </Routes>
-  )
+  );
 }
 
 export default function AppEntry() {
-  const [isUserLoggedIn, updateLoggedInStatus] = useState(false);
+  const [isUserLoggedIn, updateLoggedInStatus] = useState(true);
   return (
-    <div className="App">
-      {
-        isUserLoggedIn ? 
-          <LoggedInRoutes/> :
-            <NotLoggedInRoutes/>
-      }
+    <div className="app">
+      {isUserLoggedIn ? <LoggedInRoutes /> : <NotLoggedInRoutes />}
     </div>
   );
 }
