@@ -1,0 +1,28 @@
+.heroClass {
+  background-image: url(../../layout/images/hero_photo.jpg);
+
+  height: 70vh;
+}
+
+.herosubclass {
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+/* .buttonsection {
+  margin-left: 4.5rem;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+} */
+.butonstyle {
+  border-radius: 4px;
+  /* padding: 0.3rem; */
+}
+.buttoncolor {
+  background-color: rgb(177, 172, 172);
+}
+
+.fontsizeclass {
+  font-size: small;
+}
