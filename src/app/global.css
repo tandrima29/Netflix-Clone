@@ -5,3 +5,15 @@
 .clickable {
     cursor: pointer;
 }
+
+.font16 {
+    font-size: 16px;
+}
+
+.font13 {
+    font-size: 13px;
+}
+
+.font11 {
+    font-size: 11px;
+}

@@ -16,10 +16,9 @@
 
 .login {
   background-color: rgba(0, 0, 0, 0.75);
-  padding: 60px 68px 40px;
-  min-height: 80vh;
-
+  padding:80px 70px;
   min-width: 50vh;
+  max-width: 450px;
   display: flex;
   flex-direction: column;
   border-radius: 4px;
