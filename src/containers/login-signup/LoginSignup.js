@@ -19,7 +19,7 @@ export default function LoginSignup() {
     axios.get("api url").then((response) => {
 
     }).catch((err) => {
-      
+
     })
   }
 
@@ -69,7 +69,7 @@ export default function LoginSignup() {
           </div>
 
           <div className="text-white mt-5">
-            New to Netflix? <span>Sign up now!</span>
+            New to Netflix? <b>Sign up now!</b>
           </div>
 
           <div className="text-white mt-2 font13">
