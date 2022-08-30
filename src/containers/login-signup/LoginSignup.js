@@ -5,22 +5,21 @@ export default function LoginSignup() {
   const [userDetails, updateUserDetails] = useState({
     name: "",
     password: "",
-  })
+  });
   function handleChange(e, fieldName) {
     const value = e.target.value;
     updateUserDetails((prevState) => {
       return {
         ...prevState,
-        [fieldName]: value
-      }
-    })
+        [fieldName]: value,
+      };
+    });
   }
   function handleLogin() {
-    axios.get("api url").then((response) => {
-
-    }).catch((err) => {
-
-    })
+    axios
+      .get(" https://630722593a2114bac75a5755.mockapi.io/netflix-clone/login")
+      .then((response) => {})
+      .catch((err) => {});
   }
 
   return (
@@ -28,10 +27,10 @@ export default function LoginSignup() {
       <div className="login">
         <h1>Sign In</h1>
         <form className="form-margin">
-          <div className="form-floating form-margin bg-secondary">
+          <div className="form-floating form-margin ">
             <input
               type="Email"
-              className="form-control "
+              className="form-control"
               id="floatingEmail"
               placeholder="email"
               onChange={(e) => handleChange(e, "name")}
@@ -59,21 +58,25 @@ export default function LoginSignup() {
           </button>
           <div className="row my-2 text-white">
             <div className="col-6 text-start">
-                <input type="checkbox" />
-                <span className="checkmark"></span>
-                <span className="mx-1">Remember me</span>
+              <input type="checkbox" />
+              <span className="checkmark "></span>
+              <span className="mx-1 color1">Remember me</span>
             </div>
             <div className="col-6 text-end">
-              <span className="forgotpassword clickable">Need Help?</span>
+              <span className="forgotpassword clickable color1">
+                Need Help?
+              </span>
             </div>
           </div>
 
           <div className="text-white mt-5">
-            New to Netflix? <b>Sign up now!</b>
+            <span className="color1">New to Netflix? </span>
+            <b>Sign up now!</b>
           </div>
 
-          <div className="text-white mt-2 font13">
-            This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
+          <div className="color1 mt-2 font13">
+            This page is protected by Google reCAPTCHA to ensure you're not a
+            bot. <a href="#">Learn more.</a>
           </div>
         </form>
       </div>
