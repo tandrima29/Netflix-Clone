@@ -26,7 +26,7 @@ export default function LoginSignup() {
     <div className=" container-fluid login-body">
       <div className="login">
         <h1>Sign In</h1>
-        <form className="form-margin">
+        <form className="form-margin color1">
           <div className="form-floating form-margin ">
             <input
               type="Email"
