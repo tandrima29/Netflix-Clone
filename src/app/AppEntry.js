@@ -26,10 +26,11 @@ function NotLoggedInRoutes() {
 }
 
 export default function AppEntry() {
-  const [isUserLoggedIn, updateLoggedInStatus] = useState(true);
+  const [isUserLoggedIn, updateLoggedInStatus] = useState(false);
+  const [userDetails, updateUserDetailsAfterLogin] = useState(null);
   return (
     <div className="app">
-      <LoginContext.Provider value={{isUserLoggedIn, updateLoggedInStatus}}>
+      <LoginContext.Provider value={{isUserLoggedIn, updateLoggedInStatus, userDetails, updateUserDetailsAfterLogin}}>
       {isUserLoggedIn ? <LoggedInRoutes /> : <NotLoggedInRoutes />}
       </LoginContext.Provider>
     </div>
