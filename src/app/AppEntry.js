@@ -5,6 +5,7 @@ import Dashboard from "../containers/dashboard/Dashboard";
 import LoginSignup from "../containers/login-signup/LoginSignup";
 import About from "../containers/about/About";
 import "./global.css";
+import {LoginContext} from "../context/LoginContext";
 
 function LoggedInRoutes() {
   return (
@@ -28,7 +29,9 @@ export default function AppEntry() {
   const [isUserLoggedIn, updateLoggedInStatus] = useState(true);
   return (
     <div className="app">
+      <LoginContext.Provider value={{isUserLoggedIn, updateLoggedInStatus}}>
       {isUserLoggedIn ? <LoggedInRoutes /> : <NotLoggedInRoutes />}
+      </LoginContext.Provider>
     </div>
   );
 }
