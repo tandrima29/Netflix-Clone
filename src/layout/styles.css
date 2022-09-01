@@ -1,4 +1,20 @@
 /* header style */
+.navbar {
+  background-color: black;
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+.navbar .nav-link:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar:active {
+  color: none;
+}
 /* footer style */
 
 .cursor {

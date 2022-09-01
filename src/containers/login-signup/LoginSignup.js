@@ -1,7 +1,11 @@
 import axios from "axios";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { LoginContext } from "../../context/LoginContext";
 import "./loginpage.css";
+
 export default function LoginSignup() {
+  const {updateLoggedInStatus, updateUserDetailsAfterLogin} = useContext(LoginContext);
+  const [isLoading, updateLoading] = useState(false);
   const [userDetails, updateUserDetails] = useState({
     name: "",
     password: "",
@@ -15,11 +19,20 @@ export default function LoginSignup() {
       };
     });
   }
-  function handleLogin() {
+  function handleLogin(e) {
+    e.preventDefault()
+    updateLoading(true)
     axios
       .get(" https://630722593a2114bac75a5755.mockapi.io/netflix-clone/login")
-      .then((response) => {})
-      .catch((err) => {});
+      .then((response) => {
+        updateLoggedInStatus(true)
+        updateLoading(false)
+        updateUserDetailsAfterLogin(response.data)
+      })
+      .catch((err) => {
+        updateLoading(false)
+        alert("Login Failed")
+      });
   }
 
   return (
@@ -33,6 +46,7 @@ export default function LoginSignup() {
               className="form-control"
               id="floatingEmail"
               placeholder="email"
+              value={userDetails.name}
               onChange={(e) => handleChange(e, "name")}
             />
             <label htmlFor="floatingPassword">Email or phone number</label>
@@ -44,6 +58,7 @@ export default function LoginSignup() {
               className="form-control"
               id="floatingPassword"
               placeholder="Password"
+              value={userDetails.password}
               onChange={(e) => handleChange(e, "password")}
             />
             <label htmlFor="floatingPassword">Password</label>
@@ -54,7 +69,7 @@ export default function LoginSignup() {
             className="btn bg-danger w-100 form-margin text-white p-2"
             onClick={handleLogin}
           >
-            Sign In
+            {isLoading ? "Please wait..." : "Sign In"}
           </button>
           <div className="row my-2 text-white">
             <div className="col-6 text-start">
