@@ -10,7 +10,7 @@ export default function TvActionAdventure() {
   useEffect(() => {
     axios
       .get(
-        "https://630722593a2114bac75a5755.mockapi.io/netflix-clone/top-10-to-watch"
+        "https://630722593a2114bac75a5755.mockapi.io/netflix-clone/new-release"
       )
       .then((response) => {
         const result = response.data.content;
@@ -20,7 +20,7 @@ export default function TvActionAdventure() {
       .catch((error) => {});
   }, []);
   return (
-    <div className="container-fluid">
+    <div className="container-fluid my-5">
       <h5 className="text-white">TV Actions & Adventures</h5>
       <div className="row slider-wrapper">
         {recentWatch.map((item, index) => {

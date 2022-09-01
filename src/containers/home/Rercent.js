@@ -20,7 +20,8 @@ export function RecentWatch() {
   }, []);
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid my-5">
+      <h5 className="text-white">Recent Movies</h5>
       <div className="row slider-wrapper">
         {recentWatch.map((item, index) => {
           return (
