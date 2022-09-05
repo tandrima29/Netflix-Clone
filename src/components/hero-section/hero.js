@@ -9,11 +9,13 @@ export default function Hero() {
       <div className="row heroClass mx-0">
         <div className="col-md-3 col-sm-12 d-flex px-5 justify-content-center herosubclass flex-column">
           <div>
-            <h1>
-              THE CHESTNUT MAN RETURNS
-            </h1>
+            <h1>THE CHESTNUT MAN RETURNS</h1>
             <p className="desc my-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum
             </p>
           </div>
           <span className="buttonsection fontsizeclass">
