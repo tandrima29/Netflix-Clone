@@ -1,10 +1,13 @@
 import axios from "axios";
 import { useContext, useState } from "react";
 import { LoginContext } from "../../context/LoginContext";
+import { useNavigate } from 'react-router-dom';
+
 import "./loginpage.css";
 
 export default function LoginSignup() {
   const {updateLoggedInStatus, updateUserDetailsAfterLogin} = useContext(LoginContext);
+  const navigate = useNavigate()
   const [isLoading, updateLoading] = useState(false);
   const [userDetails, updateUserDetails] = useState({
     name: "",
@@ -28,6 +31,7 @@ export default function LoginSignup() {
         updateLoggedInStatus(true)
         updateLoading(false)
         updateUserDetailsAfterLogin(response.data)
+        navigate("/profile")
       })
       .catch((err) => {
         updateLoading(false)

@@ -12,6 +12,7 @@ function LoggedInRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Dashboard />} />
+      <Route path="/profile" element={<Profile />} />
     </Routes>
   );
 }
@@ -21,7 +22,7 @@ function NotLoggedInRoutes() {
     <Routes>
       <Route path="/" element={<LoginSignup />} />
       <Route path="contact" element={<Contact />} />
-      <Route path="contact" element={<About />} />
+      <Route path="aboout" element={<About />} />
     </Routes>
   );
 }

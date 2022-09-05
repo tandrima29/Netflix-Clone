@@ -8,14 +8,14 @@ import Body from "../../layout/Body";
 export default function Dashboard() {
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
 
-      <Routes>
-        <Route path="/" element={<Profile />} />
-        <Route path="profile" element={<Profile />} />
-      </Routes>
+      <Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+      </Route>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
