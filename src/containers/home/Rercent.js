@@ -25,7 +25,7 @@ export function RecentWatch() {
       <div className="row slider-wrapper">
         {recentWatch.map((item, index) => {
           return (
-            <div className="col-sm-2 my-2 clickable">
+            <div className="col-sm-2 my-2 clickable" key={index}>
               <MovieCard
                 bgImg={item.imgUrl}
                 isNetflixOrigin={item.isNetflixOrigin}
