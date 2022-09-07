@@ -13,7 +13,7 @@ export function RecentWatch() {
       )
       .then((response) => {
         const result = response.data.content;
-
+        console.log(response);
         updateRecentWatch(result);
       })
       .catch((error) => {});

@@ -6,9 +6,23 @@ import { HiSearch } from "react-icons/hi";
 import { BiCheckbox } from "react-icons/bi";
 import { BsFillBellFill } from "react-icons/bs";
 import NetflixLogo from "./images/NetflixLogo.png";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import "./styles.css";
 
 export default function Header() {
+  const [recentWatch, updateRecentWatch] = useState([]);
+  useEffect(() => {
+    axios
+      .get("https://630722593a2114bac75a5755.mockapi.io/netflix-clone/login")
+      .then((response) => {
+        const result = response.data;
+        console.log(result);
+        updateRecentWatch(result);
+      })
+      .catch((error) => {});
+  }, []);
+
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" className="navbar">
@@ -42,7 +56,10 @@ export default function Header() {
                 <BsFillBellFill />
               </Nav.Link>
 
-              <NavDropdown title={<BiCheckbox />} id="collasible-nav-dropdown">
+              <NavDropdown
+                title={<img src={recentWatch.Avatar} className="avatarclass" />}
+                id="collasible-nav-dropdown"
+              >
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action

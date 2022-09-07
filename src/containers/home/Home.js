@@ -1,8 +1,9 @@
 import Hero from "../../components/hero-section/hero";
-import ExcitingMovies from "./ExcitingMovies";
+
 import { RecentWatch } from "./Rercent";
+import { ExcitingMovies } from "./ExcitingMovies";
+import { TvActionAdventure } from "./TvActionAdventure";
 import "./styles.css";
-import TvActionAdventure from "./TvActionAdventure";
 
 export default function Home() {
   return (
@@ -10,8 +11,8 @@ export default function Home() {
       <Hero />
       <div className="p-3 p-md-5">
         <RecentWatch />
-        <TvActionAdventure/>
-        <ExcitingMovies/>
+        <TvActionAdventure />
+        <ExcitingMovies />
       </div>
     </div>
   );
