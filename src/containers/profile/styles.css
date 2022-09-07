@@ -1,0 +1,16 @@
+.rounded-avatar {
+  border-radius: 4px;
+  width: 150px;
+  height: 150px;
+}
+.avatar-container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+  .rounded-avatar {
+    width: 80px;
+    height: 80px;
+  }
+}

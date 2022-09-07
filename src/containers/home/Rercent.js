@@ -20,12 +20,12 @@ export function RecentWatch() {
   }, []);
 
   return (
-    <div className="container-fluid py-3">
+    <div className="container-fluid my-5">
       <h5 className="text-white">Recent Movies</h5>
       <div className="row slider-wrapper">
         {recentWatch.map((item, index) => {
           return (
-            <div className="col-sm-2 my-2 clickable">
+            <div className="col-sm-2 my-2 clickable" key={index}>
               <MovieCard
                 bgImg={item.imgUrl}
                 isNetflixOrigin={item.isNetflixOrigin}

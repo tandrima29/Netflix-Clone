@@ -1,3 +1,3 @@
 export default function Body() {
-  return <div></div>;
+  return <div>i am body</div>;
 }

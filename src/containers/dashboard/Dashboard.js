@@ -10,10 +10,10 @@ export default function Dashboard() {
     <div>
       <Header />
 
-      <Routes>
+      <Route>
         <Route path="/" element={<Home />} />
-        <Route path="profile" element={<Profile />} />
-      </Routes>
+        <Route path="/profile" element={<Profile />} />
+      </Route>
 
       <Footer />
     </div>
