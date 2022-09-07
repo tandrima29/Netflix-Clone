@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import MovieCard from "../../components/movie-card/MovieCard";
 import axios from "axios";
 
-export default function TvActionAdventure() {
+export function TvActionAdventure() {
   const [recentWatch, updateRecentWatch] = useState([]);
 
   useEffect(() => {

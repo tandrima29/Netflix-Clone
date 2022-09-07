@@ -1,7 +1,34 @@
-.movie-card{
-    transition: .2s;
-  }
-.movie-card:hover{
-    transform: scale(1.3);
-    z-index: 999;
+/* .movie-card {
+  position: absolute;
+  transition: 0.2s;
+  display: none;
+  z-index: 1;
+} */
+
+/* .movie-card:hover {
+  transform: scale(1.3);
+  z-index: 999;
+} */
+.card .bodyShow {
+  display: none;
+}
+.card :hover + .bodyShow {
+  display: block;
+}
+.card {
+  transition: 0.2s;
+  transform: 1s;
+  width: 12.5rem;
+  height: 12.5rem;
+}
+.card img {
+  height: 12rem;
+}
+.card:hover {
+  transform: scale(1.3);
+  position: absolute;
+  z-index: 2;
+}
+.buttonstyle {
+  border-radius: 100%;
 }

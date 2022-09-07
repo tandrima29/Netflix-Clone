@@ -13,7 +13,7 @@ export function RecentWatch() {
       )
       .then((response) => {
         const result = response.data.content;
-
+        console.log(response);
         updateRecentWatch(result);
       })
       .catch((error) => {});
@@ -21,6 +21,7 @@ export function RecentWatch() {
 
   return (
     <div className="container-fluid">
+      <h5 className="text-white">Recent Movies</h5>
       <div className="row slider-wrapper">
         {recentWatch.map((item, index) => {
           return (
