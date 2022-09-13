@@ -9,12 +9,7 @@ export default function Dashboard() {
   return (
     <div>
       <Header />
-
-      <Route>
-        <Route path="/" element={<Home />} />
-        <Route path="/profile" element={<Profile />} />
-      </Route>
-
+      <Home/>
       <Footer />
     </div>
   );

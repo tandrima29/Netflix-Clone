@@ -95,7 +95,7 @@ export default function LoginSignup() {
 
           <div className="color1 mt-2 font13">
             This page is protected by Google reCAPTCHA to ensure you're not a
-            bot. <a href="#">Learn more.</a>
+            bot. <span>Learn more.</span>
           </div>
         </form>
       </div>

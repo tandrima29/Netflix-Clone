@@ -9,39 +9,26 @@ import "./moviecard.css";
 export default function MovieCard(props) {
   return (
     <div
-      classNameName="movie-card"
-      style={
-        {
-          // minHeight: 180,
-          // backgroundImage: `url(${props.bgImg})`,
-          // backgroundRepeat: "no-repeat",
-          // backgroundPosition: "center",
-          // backgroundSize: "100% 100%",
-        }
-      }
+      className="movie-card"
     >
       <div className="card">
         <img src={props.bgImg} className="card-img-top" alt="CardImage" />
-        <div className="card-body bodyShow">
-          <h5 className="card-title">{props.isTopTen && <span>N</span>}</h5>
+        <div className="card-body bodyShow text-dark">
+          <b>Lorem ipsum dolor</b>
+          <p className="small text-dark" style={{fontSize: 11}}>
+          Sed ut perspiciatis unde omnis iste natus oloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore ...
+          </p>
           <div className="row">
-            <div className="col-md-6 ">
+            <div className="col-12 text-center ">
               <div className="d-flex">
                 <button className="btn btn-sm">
-                  <AiFillPlayCircle />
+                  <AiFillPlayCircle size={"28px"}/>
                 </button>
                 <button className="btn btn-sm">
-                  <AiFillPlusCircle />
+                  <AiFillPlusCircle size={"28px"} />
                 </button>
                 <button className="btn btn-sm">
-                  <AiFillLike />
-                </button>
-              </div>
-            </div>
-            <div className="col-md-6 ">
-              <div className="d-flex justify-content-end">
-                <button className="btn btn-sm">
-                  <IoIosArrowDropdownCircle />
+                  <AiFillLike size={"28px"}  />
                 </button>
               </div>
             </div>

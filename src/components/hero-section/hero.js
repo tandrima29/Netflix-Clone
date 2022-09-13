@@ -2,13 +2,12 @@ import "./styles.css";
 import { FaPlay } from "react-icons/fa";
 import { BiInfoCircle } from "react-icons/bi";
 import Bgvideo from "../../layout/images/stock-footage-new-york-united-states-dec-glowing-netflix-neon-animated-icon-line-social-media-k.webm";
-import clip from "../../layout/images/Boat_13.mp4";
 
 export default function Hero() {
   return (
     <div className="container-fluid hoverzindexclass">
       {/* <video src={clip} playsInline autoPlay loop muted /> */}
-      <video autoPlay loop className="heroClass video">
+      <video autoPlay loop className="heroClass video" width={"100%"}>
         <source src={Bgvideo} />
       </video>
 

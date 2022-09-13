@@ -11,7 +11,7 @@ import Profile from "../containers/profile/Profile";
 function LoggedInRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Dashboard />} />
+      <Route index path="/" element={<Dashboard />}/>
       <Route path="/profile" element={<Profile />} />
     </Routes>
   );
